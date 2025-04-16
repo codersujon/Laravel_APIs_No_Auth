@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Employee;
 
 class ApiController extends Controller
 {
@@ -11,7 +12,7 @@ class ApiController extends Controller
      * Add Employee POST
      */
     public function addEmployee(){
-        
+       
     }
 
     /**
@@ -39,6 +40,6 @@ class ApiController extends Controller
      * Delete Employee
      */
     public function deleteEmployee($employeeId){
-        
+
     }
 }
