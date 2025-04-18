@@ -7,8 +7,6 @@ A simple Laravel REST API to manage employees — add, view, update, and delete.
 ## 🔗 Base URL
 http://localhost:8000/api/
 
-
-
 ---
 
 ## 📌 API Endpoints
@@ -28,14 +26,19 @@ http://localhost:8000/api/
   "gender": "male"
 }
 
-Success Response:
 {
   "status": true,
-  "message": "Employee created successfully",
-  "data": {
-    "id": 1,
-    "name": "Jamal Uddin",
-    ...
-  }
+  "message": "Employee saved successfully!",
 }
 
+📋 2. List All Employees
+URL: /list-employee
+
+Method: GET
+
+Response:
+{
+    "status":true,
+    "message": "Employees found",
+    "data": [...]
+}
