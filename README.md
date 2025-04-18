@@ -1,6 +1,6 @@
 # 👨‍💼 Laravel Employee Management API
 
-A simple RESTful API built with Laravel to manage employee records (CRUD).
+A simple RESTful API built with Laravel to manage employee records.
 
 ---
 
@@ -34,5 +34,19 @@ http://localhost:8000/api/
   "status": true,
   "message": "Employee saved successfully!"
 }
+```
 
 
+### 📥 2. List All Employees
+
+- **URL:** `/list-employee`  
+- **Method:** `GET`
+
+- **Response:**
+```json
+{
+  "status": true,
+  "message": "Employees found",
+   "data": [...]
+}
+```
