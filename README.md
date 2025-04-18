@@ -1,32 +1,40 @@
-<p align="center"><a href="https://github.com/codersujon" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 👨‍💼 Laravel Employee API
 
+A simple Laravel REST API to manage employees — add, view, update, and delete.
 
-
-# Employee Management API (Laravel)
-
-A Simple Restful API built with laravel to manage employee data.
-
-## 🛠️ Base URL
-http://localhost:8000/api/
 ---
 
-## 📌 Endpoints
+## 🔗 Base URL
+http://localhost:8000/api/
 
-### 🔹 Get All Employees
 
-- **URL:** `/list-employee`
-- **Method:** `GET`
-- **Response:**
+
+---
+
+## 📌 API Endpoints
+
+### 📥 1. Add Employee
+
+- **URL:** `/add-employee`
+- **Method:** `POST`
+- **Body (JSON):**
+
 ```json
 {
-  "status": true,
-  "message": "Employees found",
-  "data": [ ... ]
+  "name": "Jamal Uddin",
+  "email": "jamal@gmail.com",
+  "phone_number": "017xxxxxxxx",
+  "age": 35,
+  "gender": "male"
 }
 
-### 🔹 Get Single Employee
-
-URL: /single-employee/{id}
-
-Method: GET
+{
+  "status": true,
+  "message": "Employee created successfully",
+  "data": {
+    "id": 1,
+    "name": "Jamal Uddin",
+    ...
+  }
+}
 
