@@ -22,4 +22,4 @@ Route::get("single-employee/{id}", [ApiController::class, "getSingleEmployee"]);
 Route::put("update-employee/{id}", [ApiController::class, "updateEmployee"]);
 
 # Delete Employee
-Route::delete("delete-employee/{id}", [ApiController::class, "updateEmployee"]);
+Route::delete("delete-employee/{id}", [ApiController::class, "deleteEmployee"]);

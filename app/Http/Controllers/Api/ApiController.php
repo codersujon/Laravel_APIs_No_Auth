@@ -82,15 +82,6 @@ class ApiController extends Controller
     public function updateEmployee(Request $request, $employeeId){
           $employee = Employee::find($employeeId);
           
-          // Validation incoming request
-          // $request->validate([
-          //      "name" => "required|string|max:255",
-          //      "email" => "required|email|unique:employees,email",
-          //      "age" => "required|integer|min:18|max:100",
-          //      'phone_number' => 'required|string',
-          //      "gender" => "required|in:male,female,other"
-          // ]);
-
           if($employee){
                 $employee->name = !empty($request->name) ? $request->name: $employee->name;
                 $employee->email = !empty($request->name) ? $request->email: $employee->email;
@@ -117,5 +108,20 @@ class ApiController extends Controller
      */
     public function deleteEmployee($employeeId){
 
+          $employee = Employee::find($employeeId);
+          if(!$employee){
+               return response()->json([
+                    "status" => false,
+                    "message" => "Employee not found!",
+               ]);
+          }
+
+          $employee->delete();
+
+          return response()->json([
+               "status" => true,
+               "message" => "Employee deleted!",
+          ]);
+         
     }
 }
