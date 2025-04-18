@@ -27,8 +27,11 @@ http://localhost:8000/api/
   "gender": "male"
 }
 
-```json
-
-
 - **Success Response:**
+```json
+{
+  "status": true,
+  "message": "Employee created!"
+}
+
 
