@@ -1,4 +1,4 @@
-# 👨‍💼 Laravel Employee Management API
+# 👨‍💼 Laravel Employee API
 
 A simple RESTful API built with Laravel to manage employee records.
 
@@ -65,3 +65,58 @@ http://localhost:8000/api/
    "data": []
 }
 ```
+
+### ✏️ 4. Update Employee
+
+- **URL:** `/update-employee/{id}`  
+- **Method:** `PUT`
+- **Example:** `/update-employee/3`
+- **Body (JSON):**
+
+```json
+{
+  "name": "Test",
+  "email": "test@gmail.com",
+  "phone_number": "01680366446",
+  "age": 25,
+  "gender": "male"
+}
+```
+
+- **Response:**
+```json
+{
+  "status": true,
+  "message": "Employee updated successfully",
+  "data": {  }
+}
+```
+
+### ❌ 5. Delete Employee
+
+- **URL:** `/delete-employee/{id}`  
+- **Method:** `DELETE`
+- **Example:** `/delete-employee/3`
+
+- **Success Response:**
+```json
+{
+  "status": true,
+  "message": "Employee deleted!",
+}
+```
+
+🛡️ Authentication
+❌ No authentication required. (Public API)
+
+⚙️Built With
+- **Laravel 12+**
+- **PHP 8.2+**
+- **MySQL**
+- **Postman (for testing)**
+
+
+
+
+
+
