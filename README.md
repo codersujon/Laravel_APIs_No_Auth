@@ -34,9 +34,9 @@ http://localhost:8000/api/
 }
 
 📋 2. List All Employees
-URL: /list-employee
+- **URL:** `/list-employee`
+- **Method:** `GET`
 
-Method: GET
 
 Response:
 {
