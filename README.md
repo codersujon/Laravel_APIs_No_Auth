@@ -106,14 +106,20 @@ http://localhost:8000/api/
 }
 ```
 
-🛡️ Authentication
+### 🛡️ Authentication
 ❌ No authentication required. (Public API)
 
-⚙️Built With
+### ⚙️ Built With
 - **Laravel 12+**
 - **PHP 8.2+**
 - **MySQL**
 - **Postman (for testing)**
+
+
+
+### 👨‍💻 Developed By
+#### MD SUJAN AHMED
+[GitHub](https://github.com/codersujon/)
 
 
 
