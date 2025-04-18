@@ -60,14 +60,56 @@ class ApiController extends Controller
      * Single Employee Details (GET)
      */
     public function getSingleEmployee($employeeId){
+          $employee = Employee::find($employeeId);
 
+          if(!$employee){
+               return response()->json([
+                    "status" => false,
+                    "message" => "No employee with given ID"
+               ]);
+          }
+
+          return response()->json([
+               "status" => true,
+               "message" => "Employee data found",
+               "data" => $employee
+          ]);
     }
 
     /**
      * Update Employee PUT
      */
-    public function updateEmployee($employeeId){
+    public function updateEmployee(Request $request, $employeeId){
+          $employee = Employee::find($employeeId);
+          
+          // Validation incoming request
+          // $request->validate([
+          //      "name" => "required|string|max:255",
+          //      "email" => "required|email|unique:employees,email",
+          //      "age" => "required|integer|min:18|max:100",
+          //      'phone_number' => 'required|string',
+          //      "gender" => "required|in:male,female,other"
+          // ]);
 
+          if($employee){
+                $employee->name = !empty($request->name) ? $request->name: $employee->name;
+                $employee->email = !empty($request->name) ? $request->email: $employee->email;
+                $employee->phone_number = !empty($request->phone_number) ? $employee->phone_number: $request->phone_number;
+                $employee->age = !empty($request->age) ? $request->age: $$employee->age;
+                $employee->gender = !empty($request->gender) ? $request->gender: $employee->gender;
+                $employee->update();
+
+                return response()->json([
+                    "status" => true,
+                    "message" => "Employee data updated successfully!",
+               ]);
+          }
+
+          return response()->json([
+               "status" => false,
+               "message" => "Employee not found!",
+          ]);
+         
     }
 
     /**
