@@ -3,6 +3,9 @@
 A simple RESTful API built with Laravel to manage employee records.
 
 ---
+## 🌐 API Docs
+
+🔗 [View Full API Documentation](http://localhost:8000/docs)
 
 ## 🌐 Base URL
 http://localhost:8000/api/
