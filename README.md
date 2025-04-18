@@ -26,6 +26,8 @@ http://localhost:8000/api/
   "gender": "male"
 }
 
+---
+
 {
   "status": true,
   "message": "Employee saved successfully!",
