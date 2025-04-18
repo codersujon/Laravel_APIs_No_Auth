@@ -40,7 +40,20 @@ class ApiController extends Controller
      * List Employee GET
      */
     public function listEmployee(){
+          $employees = Employee::all();
 
+          if($employees->isEmpty()){
+               return response()->json([
+                    "status" => false,
+                    "message" => "No data found",
+               ]);
+          }
+
+          return response()->json([
+               "status" => true,
+               "message" => "Employees found",
+               "data" => $employees
+          ]);
     }
 
     /**
