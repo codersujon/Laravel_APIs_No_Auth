@@ -26,12 +26,13 @@ http://localhost:8000/api/
   "age": 35,
   "gender": "male"
 }
+```
 
 - **Success Response:**
 ```json
 {
   "status": true,
-  "message": "Employee created!"
+  "message": "Employee saved successfully!"
 }
 
 
