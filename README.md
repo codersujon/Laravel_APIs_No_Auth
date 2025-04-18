@@ -27,41 +27,8 @@ http://localhost:8000/api/
   "gender": "male"
 }
 
-📋 2. List All Employees
-URL: /list-employee
-
-Method: GET
-
- 3. Get Single Employee
-URL: /single-employee/{id}
-
-Method: GET
-
-Example: /single-employee/3
 
 
-4. Update Employee
-URL: /update-employee/{id}
-
-Method: PUT
-
-Example: /update-employee/3
-
-Body (JSON):
-
-json
-Copy
-Edit
 
 
-{
-  "name": "Updated Name",
-  "email": "updated@gmail.com",
-  "phone_number": "018xxxxxxxx",
-  "age": 30,
-  "gender": "female"
-}
 
-
-🔐 Authentication
-❌ No authentication required. (Public API)
