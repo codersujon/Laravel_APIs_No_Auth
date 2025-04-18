@@ -27,5 +27,8 @@ http://localhost:8000/api/
   "gender": "male"
 }
 
-- **Success Response:**
 ```json
+
+
+- **Success Response:**
+
