@@ -20,6 +20,13 @@ http://localhost:8000/api/
 ```json
 {
   "status": true,
-  "message" => "Employees found"
+  "message": "Employees found",
   "data": [ ... ]
 }
+
+### 🔹 Get Single Employee
+
+URL: /single-employee/{id}
+
+Method: GET
+
