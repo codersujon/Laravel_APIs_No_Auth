@@ -2,7 +2,24 @@
 
 
 
-## Laravel API
+# Employee Management API (Laravel)
 
-Laravel API Development without Authentication:
+A Simple Restful API built with laravel to manage employee data.
 
+## 🛠️ Base URL
+http://localhost:8000/api/
+---
+
+## 📌 Endpoints
+
+### 🔹 Get All Employees
+
+- **URL:** `/list-employee`
+- **Method:** `GET`
+- **Response:**
+```json
+{
+  "status": true,
+  "message" => "Employees found"
+  "data": [ ... ]
+}
