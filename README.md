@@ -26,8 +26,8 @@ http://localhost:8000/api/
   "gender": "male"
 }
 
----
 
+```json
 {
   "status": true,
   "message": "Employee saved successfully!",
