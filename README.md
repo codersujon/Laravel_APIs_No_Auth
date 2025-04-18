@@ -37,7 +37,7 @@ http://localhost:8000/api/
 ```
 
 
-### 📥 2. List All Employees
+### 📋 2. List All Employees
 
 - **URL:** `/list-employee`  
 - **Method:** `GET`
@@ -47,6 +47,21 @@ http://localhost:8000/api/
 {
   "status": true,
   "message": "Employees found",
-   "data": [...]
+   "data": []
+}
+```
+
+### 🔍 3. Get Single Employee
+
+- **URL:** `/single-employee/{id}`  
+- **Method:** `GET`
+- **Example:** `/single-employee/3`
+
+- **Response:**
+```json
+{
+  "status": true,
+  "message": "Employee data found",
+   "data": []
 }
 ```
